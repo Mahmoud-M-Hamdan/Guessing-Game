@@ -106,7 +106,7 @@ else{
 
 }
 alert('the Correct Answer is 8');
-let x=[3,9,15,20,100]
+let x=[3,9,15,20,100,150,1]
 for(let y=0 ; y<6 ; y++){
   let guessNum=Number(prompt('U should guess one of the right numbers , u just have 6 attempt to gues the right number'))
   
