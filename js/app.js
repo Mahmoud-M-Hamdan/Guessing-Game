@@ -5,7 +5,7 @@ var ra=0;
 function namefun(h){
 var nameuser=prompt(h);
 alert('Hey '+ nameuser + ' i hope u fine , before let u in i will ask u 5 quistions and u should answer it with yes or no only , it is aquestions about me u should guest it , dont fear and be ready , then leet goo' );
-
+return nameuser;
 }
 
 
@@ -143,7 +143,7 @@ for(let y=0 ; y<6 ; y++){
 }
 
 }
-namefun('hey there , provide me with ur name please ')
+let anyName= namefun('hey there , provide me with ur name please ')
 foodFun('Do u think my fav food is mansaf ?');
 fieldFun('Do u think am a doctor ?');
 askFun('Do u love me ?');
@@ -153,7 +153,7 @@ gueesnumFun('U should guess a number between 0 and 20 , u just have 4 attempt to
 guessarrayFun('U should guess one of the right numbers , u just have 6 attempt to gues the right number');
 
 
-alert('Good answers ' +' , your correct answers are ' + ra);
+alert('Good answers ' +anyName+ ' , your correct answers are ' + ra);
 
 
 
