@@ -91,7 +91,7 @@ switch (hobby) {
 for ( let i=0 ; i<4 ; i++){
 let num=Number(prompt('U should guess a number between 0 and 20 , u just have 4 attempt to gues the right number'));
 if (num <8){
-alert('too low')
+alert('too low');
 
 }
  else if (num >8)
@@ -106,7 +106,7 @@ else{
 
 }
 alert('the Correct Answer is 8');
-let x=[3,9,15,20,100,150,1]
+let x=[3,9,15,20,100,150,1];
 for(let y=0 ; y<6 ; y++){
   let guessNum=Number(prompt('U should guess one of the right numbers , u just have 6 attempt to gues the right number'))
   
@@ -117,6 +117,8 @@ for(let y=0 ; y<6 ; y++){
     case x[2]:
     case x[3]:
     case x[4]:
+    case x[5]:
+    case x[6]:
       alert('correct answer');
       ra++;
       y=6;
