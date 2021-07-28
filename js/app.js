@@ -2,8 +2,11 @@
 
 var ra=0;
 
-let nameuser=prompt('hey there , provide me with ur name please ')
+function namefun(h){
+var nameuser=prompt(h);
 alert('Hey '+ nameuser + ' i hope u fine , before let u in i will ask u 5 quistions and u should answer it with yes or no only , it is aquestions about me u should guest it , dont fear and be ready , then leet goo' );
+
+}
 
 
 function foodFun(c){
@@ -113,12 +116,13 @@ else{
 
 }
 }
-let x=[3,9,15,20,100,150,1];
+
 function guessarrayFun(b){
 alert('the Correct Answer is 8');
 
 for(let y=0 ; y<6 ; y++){
-  let guessNum=Number(prompt(b))
+  let guessNum=Number(prompt(b));
+  let x=[3,9,15,20,100,150,1];
   switch(guessNum)
   {
     case x[0]:
@@ -129,6 +133,7 @@ for(let y=0 ; y<6 ; y++){
     case x[5]:
     case x[6]:
       alert('correct answer');
+      alert('all the correct answers are : '+ x );
       ra++;
       y=6;
       break;
@@ -138,7 +143,7 @@ for(let y=0 ; y<6 ; y++){
 }
 
 }
-
+namefun('hey there , provide me with ur name please ')
 foodFun('Do u think my fav food is mansaf ?');
 fieldFun('Do u think am a doctor ?');
 askFun('Do u love me ?');
@@ -147,8 +152,8 @@ hoobyFun('is my fav hobby wathing anime ');
 gueesnumFun('U should guess a number between 0 and 20 , u just have 4 attempt to gues the right number');
 guessarrayFun('U should guess one of the right numbers , u just have 6 attempt to gues the right number');
 
-alert('all the correct answers are : '+ x );
-alert('Good answers '+ nameuser+' your right answers are ' + ra);
+
+alert('Good answers ' +' , your correct answers are ' + ra);
 
 
 
