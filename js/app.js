@@ -6,8 +6,8 @@ let nameuser=prompt('hey there , provide me with ur name please ')
 alert('Hey '+ nameuser + ' i hope u fine , before let u in i will ask u 5 quistions and u should answer it with yes or no only , it is aquestions about me u should guest it , dont fear and be ready , then leet goo' );
 
 
-
-let food=prompt('Do u think my fav food is mansaf ?').toLocaleLowerCase();
+function foodFun(c){
+let food=prompt(c).toLocaleLowerCase();
 switch (food) {
     case 'yes':
     case 'y':
@@ -23,7 +23,9 @@ switch (food) {
     default:
         alert('the answer should be just yes or no');
 }
-let field=prompt('Do u think am a doctor ?').toLocaleLowerCase();
+}
+function fieldFun(d){
+let field=prompt(d).toLocaleLowerCase();
 switch (field) {
   case 'yes':
   case 'y':
@@ -38,8 +40,9 @@ switch (field) {
     default:
         alert('the answer should be just yes or no');
 }
-
-let xm=prompt('Do u love me ?').toLocaleLowerCase();
+}
+function askFun(e){
+let xm=prompt(e).toLocaleLowerCase();
 switch (xm) {
   case 'yes':
   case 'y':
@@ -54,8 +57,9 @@ switch (xm) {
     default:
         alert('the answer should be just yes or no');
 }
-
-let grade=prompt('am i in tenth grade').toLocaleLowerCase();
+}
+function gradeFun(f){
+let grade=prompt(f).toLocaleLowerCase();
 switch (grade) {
   case 'yes':
   case 'y':
@@ -70,8 +74,10 @@ switch (grade) {
     default:
         alert('the answer should be just yes or no');
 }
+}
 
-let hobby=prompt('watching anime is my fav hobby ?').toLocaleLowerCase();
+function hoobyFun(g){
+let hobby=prompt(g).toLocaleLowerCase();
 switch (hobby) {
   case 'yes':
   case 'y':
@@ -86,10 +92,11 @@ switch (hobby) {
     default:
         alert('the answer should be just yes or no');
 }
+}
 
-
+function gueesnumFun(a){
 for ( let i=0 ; i<4 ; i++){
-let num=Number(prompt('U should guess a number between 0 and 20 , u just have 4 attempt to gues the right number'));
+let num=Number(prompt(a));
 if (num <8){
 alert('too low');
 
@@ -105,11 +112,13 @@ else{
 }
 
 }
-alert('the Correct Answer is 8');
+}
 let x=[3,9,15,20,100,150,1];
+function guessarrayFun(b){
+alert('the Correct Answer is 8');
+
 for(let y=0 ; y<6 ; y++){
-  let guessNum=Number(prompt('U should guess one of the right numbers , u just have 6 attempt to gues the right number'))
-  
+  let guessNum=Number(prompt(b))
   switch(guessNum)
   {
     case x[0]:
@@ -127,6 +136,17 @@ for(let y=0 ; y<6 ; y++){
     alert('wrong answer');
   }
 }
+
+}
+
+foodFun('Do u think my fav food is mansaf ?');
+fieldFun('Do u think am a doctor ?');
+askFun('Do u love me ?');
+gradeFun('am i in tenth grade');
+hoobyFun('is my fav hobby wathing anime ');
+gueesnumFun('U should guess a number between 0 and 20 , u just have 4 attempt to gues the right number');
+guessarrayFun('U should guess one of the right numbers , u just have 6 attempt to gues the right number');
+
 alert('all the correct answers are : '+ x );
 alert('Good answers '+ nameuser+' your right answers are ' + ra);
 
