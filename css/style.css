@@ -1,3 +1,31 @@
 a {text-decoration: none;background-color: #ffaeae; border: solid red 3px;; margin-right: 264px; }
 h1{border-bottom: solid rgb(230, 100, 25) 3px;}
 body{background-image: url(https://i.pinimg.com/originals/5a/c1/29/5ac1296b709f4427d4c7785a322d78a2.png);}
+.a {
+    width: 155px;
+    border: solid red 3px ;
+    padding: 35px;
+    
+;
+}
+.b{
+width: 155px ;
+position: relative;
+top: -372px;
+left: 50%;
+border: solid red 3px ;
+padding: 35px
+;
+
+}
+.c {
+position: absolute;
+top :600px;
+
+}
+img{
+    position: relative;
+    left: 40%;
+    top: -230px;
+
+}

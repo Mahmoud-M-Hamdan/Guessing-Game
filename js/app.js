@@ -17,7 +17,7 @@ switch (food) {
   alert('right answer');
   ra++;
 
- // console.log(food, 'is right answer')
+ 
       break;
       case 'no':
       case 'n':
@@ -38,7 +38,7 @@ switch (field) {
       case 'n':
       alert('right answer')
       ra++;
-     // console.log(field, 'is right answer')
+     
       break;
     default:
         alert('the answer should be just yes or no');
@@ -51,7 +51,7 @@ switch (xm) {
   case 'y':
   alert('right answer')
   ra++;
-  // console.log(xm, 'is right answer')
+  
       break;
       case 'no':
       case 'n':
@@ -72,7 +72,7 @@ switch (grade) {
       case 'n':
       alert('good boy , it is right')
       ra++;
-     // console.log(grade, 'is right answer')
+
       break;
     default:
         alert('the answer should be just yes or no');
@@ -86,7 +86,7 @@ switch (hobby) {
   case 'y':
   alert('right answer')
   ra++;
-  // console.log(hobby, 'is right answer')
+
       break;
       case 'no':
       case 'n':
